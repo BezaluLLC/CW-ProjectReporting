@@ -89,9 +89,9 @@ Required App Settings:
 
 ## Error Handling
 
--400 invalid project id or invalid report payload for PDF endpoint.
--404 project not found.
--500 unexpected processing errors.
+- 400 invalid project id or invalid report payload for PDF endpoint.
+- 404 project not found.
+- 500 unexpected processing errors.
 
 ## Security
 
