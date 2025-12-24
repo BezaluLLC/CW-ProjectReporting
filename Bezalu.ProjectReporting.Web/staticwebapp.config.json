@@ -9,6 +9,22 @@
       "rewrite": "/.auth/login/aad"
     }
   ],
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": [
+      "/.auth/*",
+      "/_framework/*",
+      "/_content/*",
+      "/css/*",
+      "/js/*",
+      "/favicon.ico",
+      "/icon-*.png",
+      "/manifest.webmanifest",
+      "/service-worker.js",
+      "/service-worker.published.js",
+      "/service-worker-assets.js"
+    ]
+  },
   "responseOverrides": {
     "401": {
       "redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer",
